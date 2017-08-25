@@ -1,0 +1,33 @@
+Setup commands
+ npm init
+ 	//main react libraries used for react development
+ npm install --save react react-dom react-router react-router-dom
+ 	//webpack development server and webpack build library
+ npm install --save-dev webpack webpack-dev-server
+ 	//html webpack plugin simplifies the creation of index.html and injects all the required style and js bundles, html webpack template creates an automatic index html file
+ npm install --save-dev html-webpack-plugin html-webpack-template
+ 	//css loader and style loader process the css files and creates single css file
+ npm install --save-dev css-loader style-loader
+ 	//babel libraries that transforms ES6 code to ES5
+ npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-react-hmre babel-plugin-transform-class-properties
+	 //clean webpack plugin clears the build directory,
+	 //extract text plugin - It moves all the required *.css modules in entry chunks into a separate CSS file. So your styles are no longer inlined into the JS bundle, but in a separate CSS file (styles.css). If your total stylesheet volume is big, it will be faster because the CSS bundle is loaded in parallel to the JS bundle.
+	 //html minifier plugin minifies the html files
+
+ npm install --save-dev clean-webpack-plugin extract-text-webpack-plugin html-minifier
+ 	//Copy webpack plugin copies the content from one folder to ther other
+ npm install --save-dev copy-webpack-plugin
+ After creating custom index html in templates folder we can uninstall html-webpack-template
+ 	//Post CSS is identical to SASS and LESS, it allows us to write the SASS style syntax straight into the css file itself,autoprefixer prefixes the styles as per the web browser
+ 	//Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+
+ npm install --save-dev normalize-css postcss-easy-import precss autoprefixer postcss-loader
+
+ npm install --save-dev suitcss-utils-display suitcss-utils-text
+
+  //For bootstrap css to work
+ npm install --save bootstrap react-bootstrap
+ npm install --save-dev file-loader url-loader
+
+
+ The application should have a .babelrc which contains the babel presets configured for react and es6 and any development presets
